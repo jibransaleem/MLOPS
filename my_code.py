@@ -11,5 +11,6 @@ df = pd.DataFrame({
     'A': np.random.rand(5),
     'B': np.random.rand(5),
 })
+df['C'] = df['A'] + df['B']
 df.to_csv(path , index = False)
 print(f"Data saved to {path}")
